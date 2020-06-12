@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F437B75122D62D7700E6074C /* SPStorkControllerConfirmDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F437B75022D62D7700E6074C /* SPStorkControllerConfirmDelegate.swift */; };
+		52AB242F2493B43C00CB0689 /* SPStorkCodeDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB242E2493B43C00CB0689 /* SPStorkCodeDraw.swift */; };
+		52AB24312493B46900CB0689 /* SPStorkViewControllerExtenshion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24302493B46900CB0689 /* SPStorkViewControllerExtenshion.swift */; };
+		52AB24342493B47B00CB0689 /* SPStorkArrowMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24322493B47B00CB0689 /* SPStorkArrowMode.swift */; };
+		52AB24352493B47B00CB0689 /* SPStorkHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24332493B47B00CB0689 /* SPStorkHaptic.swift */; };
+		52AB24382493B48D00CB0689 /* SPStorkControllerConfirmDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24362493B48D00CB0689 /* SPStorkControllerConfirmDelegate.swift */; };
+		52AB24392493B48D00CB0689 /* SPStorkControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24372493B48D00CB0689 /* SPStorkControllerDelegate.swift */; };
+		52AB243C2493B49C00CB0689 /* SPStorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB243A2493B49C00CB0689 /* SPStorkController.swift */; };
+		52AB243D2493B49C00CB0689 /* SPStorkSeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB243B2493B49C00CB0689 /* SPStorkSeque.swift */; };
+		52AB24422493B4B000CB0689 /* SPStorkPresentingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB243E2493B4B000CB0689 /* SPStorkPresentingAnimationController.swift */; };
+		52AB24432493B4B000CB0689 /* SPStorkTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB243F2493B4B000CB0689 /* SPStorkTransitioningDelegate.swift */; };
+		52AB24442493B4B000CB0689 /* SPStorkDismissingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24402493B4B000CB0689 /* SPStorkDismissingAnimationController.swift */; };
+		52AB24452493B4B000CB0689 /* SPStorkPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24412493B4B000CB0689 /* SPStorkPresentationController.swift */; };
+		52AB24492493B4BF00CB0689 /* SPStorkCloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24462493B4BF00CB0689 /* SPStorkCloseView.swift */; };
+		52AB244A2493B4BF00CB0689 /* SPStorkCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24472493B4BF00CB0689 /* SPStorkCloseButton.swift */; };
+		52AB244B2493B4BF00CB0689 /* SPStorkIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB24482493B4BF00CB0689 /* SPStorkIndicatorView.swift */; };
 		F445CA8721AED92600184254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445CA8621AED92600184254 /* AppDelegate.swift */; };
 		F445CA8921AED92600184254 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445CA8821AED92600184254 /* Controller.swift */; };
 		F445CA8E21AED92700184254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F445CA8D21AED92700184254 /* Assets.xcassets */; };
 		F445CA9121AED92700184254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445CA8F21AED92700184254 /* LaunchScreen.storyboard */; };
 		F459D75B21C3AB9A00798524 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459D75A21C3AB9A00798524 /* ModalViewController.swift */; };
 		F459D75D21C3ABBD00798524 /* ModalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459D75C21C3ABBD00798524 /* ModalTableViewController.swift */; };
-		F4803BF523082FDA0092C9BC /* SPStorkArrowMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4803BF423082FDA0092C9BC /* SPStorkArrowMode.swift */; };
 		F4DB849622609C05005082AA /* SPVibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB83F522609C03005082AA /* SPVibration.swift */; };
 		F4DB849722609C05005082AA /* SPPromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB83F922609C03005082AA /* SPPromoTableViewCell.swift */; };
 		F4DB849822609C05005082AA /* SPFormButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB83FB22609C03005082AA /* SPFormButtonTableViewCell.swift */; };
@@ -135,25 +148,26 @@
 		F4DB850B22609C05005082AA /* SPRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB849122609C04005082AA /* SPRandom.swift */; };
 		F4DB850C22609C05005082AA /* SPDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB849322609C04005082AA /* SPDelay.swift */; };
 		F4DB850D22609C05005082AA /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB849522609C04005082AA /* SPShare.swift */; };
-		F4E0E39022CF6B940020D754 /* SPStorkHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E37E22CF6B940020D754 /* SPStorkHaptic.swift */; };
-		F4E0E39122CF6B940020D754 /* SPStorkSeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E37F22CF6B940020D754 /* SPStorkSeque.swift */; };
-		F4E0E39222CF6B940020D754 /* SPStorkCodeDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38122CF6B940020D754 /* SPStorkCodeDraw.swift */; };
-		F4E0E39322CF6B940020D754 /* SPStorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38222CF6B940020D754 /* SPStorkController.swift */; };
-		F4E0E39422CF6B940020D754 /* SPStorkTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38422CF6B940020D754 /* SPStorkTransitioningDelegate.swift */; };
-		F4E0E39522CF6B940020D754 /* SPStorkPresentingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38522CF6B940020D754 /* SPStorkPresentingAnimationController.swift */; };
-		F4E0E39622CF6B940020D754 /* SPStorkPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38622CF6B940020D754 /* SPStorkPresentationController.swift */; };
-		F4E0E39722CF6B940020D754 /* SPStorkDismissingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38722CF6B940020D754 /* SPStorkDismissingAnimationController.swift */; };
-		F4E0E39822CF6B940020D754 /* SPStorkViewControllerExtenshion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38922CF6B940020D754 /* SPStorkViewControllerExtenshion.swift */; };
-		F4E0E39922CF6B940020D754 /* SPStorkCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38B22CF6B940020D754 /* SPStorkCloseButton.swift */; };
-		F4E0E39A22CF6B940020D754 /* SPStorkIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38C22CF6B940020D754 /* SPStorkIndicatorView.swift */; };
-		F4E0E39B22CF6B940020D754 /* SPStorkCloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38D22CF6B940020D754 /* SPStorkCloseView.swift */; };
-		F4E0E39C22CF6B940020D754 /* SPStorkControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0E38F22CF6B940020D754 /* SPStorkControllerDelegate.swift */; };
 		F4F33BE722802AB000199EBE /* SPFakeBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F33BE522802AB000199EBE /* SPFakeBarView.swift */; };
 		F4F33BE822802AB000199EBE /* SPFakeBarNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F33BE622802AB000199EBE /* SPFakeBarNavigationStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F437B75022D62D7700E6074C /* SPStorkControllerConfirmDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPStorkControllerConfirmDelegate.swift; sourceTree = "<group>"; };
+		52AB242E2493B43C00CB0689 /* SPStorkCodeDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkCodeDraw.swift; path = ../../../../../Source/SPStorkController/CodeDraw/SPStorkCodeDraw.swift; sourceTree = "<group>"; };
+		52AB24302493B46900CB0689 /* SPStorkViewControllerExtenshion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkViewControllerExtenshion.swift; path = ../../../../../Source/SPStorkController/Extenshion/SPStorkViewControllerExtenshion.swift; sourceTree = "<group>"; };
+		52AB24322493B47B00CB0689 /* SPStorkArrowMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkArrowMode.swift; path = ../../../../../Source/SPStorkController/Models/SPStorkArrowMode.swift; sourceTree = "<group>"; };
+		52AB24332493B47B00CB0689 /* SPStorkHaptic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkHaptic.swift; path = ../../../../../Source/SPStorkController/Models/SPStorkHaptic.swift; sourceTree = "<group>"; };
+		52AB24362493B48D00CB0689 /* SPStorkControllerConfirmDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkControllerConfirmDelegate.swift; path = ../../../../../Source/SPStorkController/Protocols/SPStorkControllerConfirmDelegate.swift; sourceTree = "<group>"; };
+		52AB24372493B48D00CB0689 /* SPStorkControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkControllerDelegate.swift; path = ../../../../../Source/SPStorkController/Protocols/SPStorkControllerDelegate.swift; sourceTree = "<group>"; };
+		52AB243A2493B49C00CB0689 /* SPStorkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkController.swift; path = ../../../../Source/SPStorkController/SPStorkController.swift; sourceTree = "<group>"; };
+		52AB243B2493B49C00CB0689 /* SPStorkSeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkSeque.swift; path = ../../../../Source/SPStorkController/SPStorkSeque.swift; sourceTree = "<group>"; };
+		52AB243E2493B4B000CB0689 /* SPStorkPresentingAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkPresentingAnimationController.swift; path = ../../../../../Source/SPStorkController/TransitioningDelegate/SPStorkPresentingAnimationController.swift; sourceTree = "<group>"; };
+		52AB243F2493B4B000CB0689 /* SPStorkTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkTransitioningDelegate.swift; path = ../../../../../Source/SPStorkController/TransitioningDelegate/SPStorkTransitioningDelegate.swift; sourceTree = "<group>"; };
+		52AB24402493B4B000CB0689 /* SPStorkDismissingAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkDismissingAnimationController.swift; path = ../../../../../Source/SPStorkController/TransitioningDelegate/SPStorkDismissingAnimationController.swift; sourceTree = "<group>"; };
+		52AB24412493B4B000CB0689 /* SPStorkPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkPresentationController.swift; path = ../../../../../Source/SPStorkController/TransitioningDelegate/SPStorkPresentationController.swift; sourceTree = "<group>"; };
+		52AB24462493B4BF00CB0689 /* SPStorkCloseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkCloseView.swift; path = ../../../../../Source/SPStorkController/Views/SPStorkCloseView.swift; sourceTree = "<group>"; };
+		52AB24472493B4BF00CB0689 /* SPStorkCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkCloseButton.swift; path = ../../../../../Source/SPStorkController/Views/SPStorkCloseButton.swift; sourceTree = "<group>"; };
+		52AB24482493B4BF00CB0689 /* SPStorkIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPStorkIndicatorView.swift; path = ../../../../../Source/SPStorkController/Views/SPStorkIndicatorView.swift; sourceTree = "<group>"; };
 		F445CA8321AED92600184254 /* stork-controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stork-controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F445CA8621AED92600184254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F445CA8821AED92600184254 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
@@ -162,7 +176,6 @@
 		F445CA9221AED92700184254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F459D75A21C3AB9A00798524 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		F459D75C21C3ABBD00798524 /* ModalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTableViewController.swift; sourceTree = "<group>"; };
-		F4803BF423082FDA0092C9BC /* SPStorkArrowMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPStorkArrowMode.swift; sourceTree = "<group>"; };
 		F4DB83F522609C03005082AA /* SPVibration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPVibration.swift; sourceTree = "<group>"; };
 		F4DB83F922609C03005082AA /* SPPromoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPPromoTableViewCell.swift; sourceTree = "<group>"; };
 		F4DB83FB22609C03005082AA /* SPFormButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPFormButtonTableViewCell.swift; sourceTree = "<group>"; };
@@ -283,19 +296,6 @@
 		F4DB849122609C04005082AA /* SPRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPRandom.swift; sourceTree = "<group>"; };
 		F4DB849322609C04005082AA /* SPDelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPDelay.swift; sourceTree = "<group>"; };
 		F4DB849522609C04005082AA /* SPShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPShare.swift; sourceTree = "<group>"; };
-		F4E0E37E22CF6B940020D754 /* SPStorkHaptic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkHaptic.swift; sourceTree = "<group>"; };
-		F4E0E37F22CF6B940020D754 /* SPStorkSeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkSeque.swift; sourceTree = "<group>"; };
-		F4E0E38122CF6B940020D754 /* SPStorkCodeDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkCodeDraw.swift; sourceTree = "<group>"; };
-		F4E0E38222CF6B940020D754 /* SPStorkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkController.swift; sourceTree = "<group>"; };
-		F4E0E38422CF6B940020D754 /* SPStorkTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkTransitioningDelegate.swift; sourceTree = "<group>"; };
-		F4E0E38522CF6B940020D754 /* SPStorkPresentingAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkPresentingAnimationController.swift; sourceTree = "<group>"; };
-		F4E0E38622CF6B940020D754 /* SPStorkPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkPresentationController.swift; sourceTree = "<group>"; };
-		F4E0E38722CF6B940020D754 /* SPStorkDismissingAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkDismissingAnimationController.swift; sourceTree = "<group>"; };
-		F4E0E38922CF6B940020D754 /* SPStorkViewControllerExtenshion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkViewControllerExtenshion.swift; sourceTree = "<group>"; };
-		F4E0E38B22CF6B940020D754 /* SPStorkCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkCloseButton.swift; sourceTree = "<group>"; };
-		F4E0E38C22CF6B940020D754 /* SPStorkIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkIndicatorView.swift; sourceTree = "<group>"; };
-		F4E0E38D22CF6B940020D754 /* SPStorkCloseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkCloseView.swift; sourceTree = "<group>"; };
-		F4E0E38F22CF6B940020D754 /* SPStorkControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPStorkControllerDelegate.swift; sourceTree = "<group>"; };
 		F4F33BE522802AB000199EBE /* SPFakeBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPFakeBarView.swift; sourceTree = "<group>"; };
 		F4F33BE622802AB000199EBE /* SPFakeBarNavigationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPFakeBarNavigationStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -819,14 +819,14 @@
 		F4E0E37C22CF6B940020D754 /* SPStorkController */ = {
 			isa = PBXGroup;
 			children = (
-				F4E0E37D22CF6B940020D754 /* Models */,
-				F4E0E37F22CF6B940020D754 /* SPStorkSeque.swift */,
 				F4E0E38022CF6B940020D754 /* CodeDraw */,
-				F4E0E38222CF6B940020D754 /* SPStorkController.swift */,
-				F4E0E38322CF6B940020D754 /* TransitioningDelegate */,
 				F4E0E38822CF6B940020D754 /* Extenshion */,
-				F4E0E38A22CF6B940020D754 /* Views */,
+				F4E0E37D22CF6B940020D754 /* Models */,
 				F4E0E38E22CF6B940020D754 /* Protocols */,
+				52AB243A2493B49C00CB0689 /* SPStorkController.swift */,
+				52AB243B2493B49C00CB0689 /* SPStorkSeque.swift */,
+				F4E0E38322CF6B940020D754 /* TransitioningDelegate */,
+				F4E0E38A22CF6B940020D754 /* Views */,
 			);
 			path = SPStorkController;
 			sourceTree = "<group>";
@@ -834,8 +834,8 @@
 		F4E0E37D22CF6B940020D754 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F4E0E37E22CF6B940020D754 /* SPStorkHaptic.swift */,
-				F4803BF423082FDA0092C9BC /* SPStorkArrowMode.swift */,
+				52AB24322493B47B00CB0689 /* SPStorkArrowMode.swift */,
+				52AB24332493B47B00CB0689 /* SPStorkHaptic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -843,7 +843,7 @@
 		F4E0E38022CF6B940020D754 /* CodeDraw */ = {
 			isa = PBXGroup;
 			children = (
-				F4E0E38122CF6B940020D754 /* SPStorkCodeDraw.swift */,
+				52AB242E2493B43C00CB0689 /* SPStorkCodeDraw.swift */,
 			);
 			path = CodeDraw;
 			sourceTree = "<group>";
@@ -851,10 +851,10 @@
 		F4E0E38322CF6B940020D754 /* TransitioningDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				F4E0E38422CF6B940020D754 /* SPStorkTransitioningDelegate.swift */,
-				F4E0E38522CF6B940020D754 /* SPStorkPresentingAnimationController.swift */,
-				F4E0E38622CF6B940020D754 /* SPStorkPresentationController.swift */,
-				F4E0E38722CF6B940020D754 /* SPStorkDismissingAnimationController.swift */,
+				52AB24402493B4B000CB0689 /* SPStorkDismissingAnimationController.swift */,
+				52AB24412493B4B000CB0689 /* SPStorkPresentationController.swift */,
+				52AB243E2493B4B000CB0689 /* SPStorkPresentingAnimationController.swift */,
+				52AB243F2493B4B000CB0689 /* SPStorkTransitioningDelegate.swift */,
 			);
 			path = TransitioningDelegate;
 			sourceTree = "<group>";
@@ -862,7 +862,7 @@
 		F4E0E38822CF6B940020D754 /* Extenshion */ = {
 			isa = PBXGroup;
 			children = (
-				F4E0E38922CF6B940020D754 /* SPStorkViewControllerExtenshion.swift */,
+				52AB24302493B46900CB0689 /* SPStorkViewControllerExtenshion.swift */,
 			);
 			path = Extenshion;
 			sourceTree = "<group>";
@@ -870,9 +870,9 @@
 		F4E0E38A22CF6B940020D754 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F4E0E38B22CF6B940020D754 /* SPStorkCloseButton.swift */,
-				F4E0E38C22CF6B940020D754 /* SPStorkIndicatorView.swift */,
-				F4E0E38D22CF6B940020D754 /* SPStorkCloseView.swift */,
+				52AB24472493B4BF00CB0689 /* SPStorkCloseButton.swift */,
+				52AB24462493B4BF00CB0689 /* SPStorkCloseView.swift */,
+				52AB24482493B4BF00CB0689 /* SPStorkIndicatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -880,8 +880,8 @@
 		F4E0E38E22CF6B940020D754 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				F4E0E38F22CF6B940020D754 /* SPStorkControllerDelegate.swift */,
-				F437B75022D62D7700E6074C /* SPStorkControllerConfirmDelegate.swift */,
+				52AB24362493B48D00CB0689 /* SPStorkControllerConfirmDelegate.swift */,
+				52AB24372493B48D00CB0689 /* SPStorkControllerDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -972,6 +972,7 @@
 				F4DB84FA22609C05005082AA /* SPAnimationAlpha.swift in Sources */,
 				F4DB84C822609C05005082AA /* SPController.swift in Sources */,
 				F4DB849B22609C05005082AA /* SPFormTextFiledTableViewCell.swift in Sources */,
+				52AB24442493B4B000CB0689 /* SPStorkDismissingAnimationController.swift in Sources */,
 				F4DB84A022609C05005082AA /* SPImageTableViewCell.swift in Sources */,
 				F4DB84EB22609C05005082AA /* SPAppOpener.swift in Sources */,
 				F4DB84DC22609C05005082AA /* SPUIViewControllerExtenshion.swift in Sources */,
@@ -980,38 +981,30 @@
 				F4DB849622609C05005082AA /* SPVibration.swift in Sources */,
 				F4DB850522609C05005082AA /* SPCodeAudioIconPack.swift in Sources */,
 				F4DB849922609C05005082AA /* SPFormMailTableViewCell.swift in Sources */,
-				F4E0E39522CF6B940020D754 /* SPStorkPresentingAnimationController.swift in Sources */,
 				F4DB850822609C05005082AA /* SPCodeDraw.swift in Sources */,
 				F4DB84D622609C05005082AA /* SPUIFontExtenshion.swift in Sources */,
 				F4DB84A722609C05005082AA /* SPAppleMusicSectionButtonsView.swift in Sources */,
 				F4DB84FC22609C05005082AA /* SPDownloader.swift in Sources */,
 				F4F33BE822802AB000199EBE /* SPFakeBarNavigationStyle.swift in Sources */,
 				F4DB84CF22609C05005082AA /* SPImagesCollectionView.swift in Sources */,
-				F4E0E39322CF6B940020D754 /* SPStorkController.swift in Sources */,
 				F4DB84A622609C05005082AA /* SPSocialButton.swift in Sources */,
 				F4DB84E022609C05005082AA /* SPUICollectionViewExtenshion.swift in Sources */,
-				F4E0E39222CF6B940020D754 /* SPStorkCodeDraw.swift in Sources */,
-				F4803BF523082FDA0092C9BC /* SPStorkArrowMode.swift in Sources */,
 				F4DB84E222609C05005082AA /* SPUITabBarControllerExtenshion.swift in Sources */,
 				F4DB84A122609C05005082AA /* SPProposeTableViewCell.swift in Sources */,
-				F4E0E39922CF6B940020D754 /* SPStorkCloseButton.swift in Sources */,
 				F4DB849D22609C05005082AA /* SPFormTextInputTableViewCell.swift in Sources */,
 				F4DB84A222609C05005082AA /* SPBaseContentTableViewCell.swift in Sources */,
 				F4DB84FD22609C05005082AA /* SPBufer.swift in Sources */,
 				F4DB850622609C05005082AA /* SPCodeSocialIconPack.swift in Sources */,
 				F4DB84D222609C05005082AA /* SPLocale.swift in Sources */,
 				F4DB84B922609C05005082AA /* SPSeparatorView.swift in Sources */,
-				F4E0E39422CF6B940020D754 /* SPStorkTransitioningDelegate.swift in Sources */,
 				F4DB84A822609C05005082AA /* SPDotsButton.swift in Sources */,
 				F4DB84FB22609C05005082AA /* SPAnimation.swift in Sources */,
-				F4E0E39622CF6B940020D754 /* SPStorkPresentationController.swift in Sources */,
 				F4DB84F722609C05005082AA /* SPShadowDeep.swift in Sources */,
 				F4DB84BF22609C05005082AA /* SPCenterLabelsView.swift in Sources */,
 				F4DB84C522609C05005082AA /* SPNativeTableController.swift in Sources */,
 				F445CA8921AED92600184254 /* Controller.swift in Sources */,
 				F4DB84AA22609C05005082AA /* SPNativeLargeButton.swift in Sources */,
 				F4DB84E522609C05005082AA /* SPUILabelExtenshion.swift in Sources */,
-				F4E0E39122CF6B940020D754 /* SPStorkSeque.swift in Sources */,
 				F4DB84CC22609C05005082AA /* SPCollectionViewLayout.swift in Sources */,
 				F4DB850022609C05005082AA /* SPTelegram.swift in Sources */,
 				F4DB84A922609C05005082AA /* SPSystemIconButton.swift in Sources */,
@@ -1034,10 +1027,10 @@
 				F4DB84E122609C05005082AA /* SPTextFieldExtenshion.swift in Sources */,
 				F4DB84B622609C05005082AA /* SPDownloadingUIImageView.swift in Sources */,
 				F4DB849E22609C05005082AA /* SPFormTextTableViewCell.swift in Sources */,
-				F4E0E39A22CF6B940020D754 /* SPStorkIndicatorView.swift in Sources */,
 				F4DB84C622609C05005082AA /* SPTableController.swift in Sources */,
 				F4DB84C122609C05005082AA /* SPSocialIconView.swift in Sources */,
 				F4DB84C022609C05005082AA /* SPAudioIconView.swift in Sources */,
+				52AB24392493B48D00CB0689 /* SPStorkControllerDelegate.swift in Sources */,
 				F4DB850C22609C05005082AA /* SPDelay.swift in Sources */,
 				F4DB84F822609C05005082AA /* SPAnimationUpward.swift in Sources */,
 				F4DB850322609C05005082AA /* SPAudio.swift in Sources */,
@@ -1049,13 +1042,17 @@
 				F4DB84EA22609C05005082AA /* SPUIButtonExtenshion.swift in Sources */,
 				F459D75D21C3ABBD00798524 /* ModalTableViewController.swift in Sources */,
 				F4DB850922609C05005082AA /* SPGolubevGolubevIconPack.swift in Sources */,
+				52AB243C2493B49C00CB0689 /* SPStorkController.swift in Sources */,
 				F4DB84BA22609C05005082AA /* SPVideoPlayer.swift in Sources */,
+				52AB24382493B48D00CB0689 /* SPStorkControllerConfirmDelegate.swift in Sources */,
 				F4DB84A322609C05005082AA /* SPTableViewCell.swift in Sources */,
 				F4DB849F22609C05005082AA /* SPMengTransformTableViewCell.swift in Sources */,
 				F4DB849C22609C05005082AA /* SPFormFeaturedTitleTableViewCell.swift in Sources */,
 				F4DB84ED22609C05005082AA /* SPAppBadge.swift in Sources */,
-				F4E0E39722CF6B940020D754 /* SPStorkDismissingAnimationController.swift in Sources */,
+				52AB24352493B47B00CB0689 /* SPStorkHaptic.swift in Sources */,
 				F4DB84F422609C05005082AA /* SPMail.swift in Sources */,
+				52AB243D2493B49C00CB0689 /* SPStorkSeque.swift in Sources */,
+				52AB24342493B47B00CB0689 /* SPStorkArrowMode.swift in Sources */,
 				F4DB84EF22609C05005082AA /* SPNativeColors.swift in Sources */,
 				F4DB850B22609C05005082AA /* SPRandom.swift in Sources */,
 				F4DB84B422609C05005082AA /* SPTextView.swift in Sources */,
@@ -1066,36 +1063,37 @@
 				F4DB84E922609C05005082AA /* SPUIColorExtension.swift in Sources */,
 				F4DB84D022609C05005082AA /* SPPageCollectionView.swift in Sources */,
 				F4DB84D522609C05005082AA /* SPUITextFieldExtenshion.swift in Sources */,
+				52AB24312493B46900CB0689 /* SPStorkViewControllerExtenshion.swift in Sources */,
 				F4DB849822609C05005082AA /* SPFormButtonTableViewCell.swift in Sources */,
-				F4E0E39022CF6B940020D754 /* SPStorkHaptic.swift in Sources */,
 				F4DB84CD22609C05005082AA /* SPMengTransformCollectionView.swift in Sources */,
+				52AB24432493B4B000CB0689 /* SPStorkTransitioningDelegate.swift in Sources */,
 				F445CA8721AED92600184254 /* AppDelegate.swift in Sources */,
 				F4DB84A422609C05005082AA /* SPTableView.swift in Sources */,
-				F4E0E39822CF6B940020D754 /* SPStorkViewControllerExtenshion.swift in Sources */,
 				F4DB850D22609C05005082AA /* SPShare.swift in Sources */,
+				52AB242F2493B43C00CB0689 /* SPStorkCodeDraw.swift in Sources */,
 				F459D75B21C3AB9A00798524 /* ModalViewController.swift in Sources */,
 				F4DB84C722609C05005082AA /* SPStatusBarManagerController.swift in Sources */,
 				F4DB84F622609C05005082AA /* SPShadow.swift in Sources */,
 				F4DB850422609C05005082AA /* SPAudioPlayer.swift in Sources */,
+				52AB24422493B4B000CB0689 /* SPStorkPresentingAnimationController.swift in Sources */,
 				F4DB84C322609C05005082AA /* SPGolubevIconView.swift in Sources */,
 				F4DB850222609C05005082AA /* SPWhatsApp.swift in Sources */,
 				F4DB84AC22609C05005082AA /* SPButton.swift in Sources */,
 				F4DB84BE22609C05005082AA /* SPLabel.swift in Sources */,
 				F4DB84E822609C05005082AA /* SPUIImageViewExtenshion.swift in Sources */,
 				F4DB84D422609C05005082AA /* SPUITableViewCellExtenshion.swift in Sources */,
-				F4E0E39B22CF6B940020D754 /* SPStorkCloseView.swift in Sources */,
 				F4DB84AB22609C05005082AA /* SPDownloadingButton.swift in Sources */,
 				F4F33BE722802AB000199EBE /* SPFakeBarView.swift in Sources */,
 				F4DB84B522609C05005082AA /* SPGradeBlurView.swift in Sources */,
 				F4DB84DD22609C05005082AA /* SPStringExtenshion.swift in Sources */,
 				F4DB84A522609C05005082AA /* SPPlayCircleButton.swift in Sources */,
 				F4DB84FE22609C05005082AA /* SPTwitter.swift in Sources */,
+				52AB24452493B4B000CB0689 /* SPStorkPresentationController.swift in Sources */,
+				52AB244B2493B4BF00CB0689 /* SPStorkIndicatorView.swift in Sources */,
 				F4DB84DB22609C05005082AA /* SPUserDefaultsExtenshion.swift in Sources */,
 				F4DB849A22609C05005082AA /* SPFormLabelTableViewCell.swift in Sources */,
 				F4DB84AD22609C05005082AA /* SPCircleCloseButton.swift in Sources */,
-				F437B75122D62D7700E6074C /* SPStorkControllerConfirmDelegate.swift in Sources */,
 				F4DB84AE22609C05005082AA /* SPAppStoreActionButton.swift in Sources */,
-				F4E0E39C22CF6B940020D754 /* SPStorkControllerDelegate.swift in Sources */,
 				F4DB84BB22609C05005082AA /* SPBlurView.swift in Sources */,
 				F4DB850A22609C05005082AA /* SPDevice.swift in Sources */,
 				F4DB84B322609C05005082AA /* SPTextField.swift in Sources */,
@@ -1104,7 +1102,9 @@
 				F4DB84F922609C05005082AA /* SPAnimationSpring.swift in Sources */,
 				F4DB84E722609C05005082AA /* SPCGSizeExtenshion.swift in Sources */,
 				F4DB84F522609C05005082AA /* SPLayout.swift in Sources */,
+				52AB244A2493B4BF00CB0689 /* SPStorkCloseButton.swift in Sources */,
 				F4DB84D322609C05005082AA /* SPUIAlertControllerExtenshion.swift in Sources */,
+				52AB24492493B4BF00CB0689 /* SPStorkCloseView.swift in Sources */,
 				F4DB84CA22609C05005082AA /* SPMengTransformCollectionViewCell.swift in Sources */,
 				F4DB849722609C05005082AA /* SPPromoTableViewCell.swift in Sources */,
 			);
