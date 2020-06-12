@@ -33,6 +33,7 @@ class SPStorkPresentationController: UIPresentationController, UIGestureRecogniz
     var customHeight: CGFloat? = nil
     var translateForDismiss: CGFloat = 200
     var hapticMoments: [SPStorkHapticMoments] = [.willDismissIfRelease]
+    var maxWidth: CGFloat? = nil
     
     var transitioningDelegate: SPStorkTransitioningDelegate?
     weak var storkDelegate: SPStorkControllerDelegate?
@@ -86,6 +87,7 @@ class SPStorkPresentationController: UIPresentationController, UIGestureRecogniz
         let baseY: CGFloat = self.topSpace + 13
         let maxHeight: CGFloat = containerView.bounds.height - baseY
         var height: CGFloat = maxHeight
+        let width = min(containerView.bounds.width, maxWidth ?? containerView.bounds.width)
         
         if let customHeight = self.customHeight {
             if customHeight < maxHeight {
@@ -94,7 +96,7 @@ class SPStorkPresentationController: UIPresentationController, UIGestureRecogniz
                 print("SPStorkController - Custom height change to default value. Your height more maximum value")
             }
         }
-        return CGRect(x: 0, y: containerView.bounds.height - height, width: containerView.bounds.width, height: height)
+        return CGRect(x: (containerView.bounds.width - width) / 2, y: containerView.bounds.height - height, width: width, height: height)
     }
     
     override func presentationTransitionWillBegin() {
