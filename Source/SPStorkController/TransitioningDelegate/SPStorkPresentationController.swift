@@ -514,7 +514,9 @@ extension SPStorkPresentationController {
         super.containerViewWillLayoutSubviews()
         guard let containerView = containerView else { return }
         self.updateSnapshotAspectRatio()
-        if presentedViewController.view.isDescendant(of: containerView) {
+        if presentedViewController.view.isDescendant(of: containerView)
+           , self.presentedViewController.view.transform == .identity
+        {
             self.presentedViewController.view.frame = self.frameOfPresentedViewInContainerView
         }
     }
